@@ -14,10 +14,3 @@ Feature:  user sign up to Choonz
     And I press the login button
   Then I should see the welcome page
 
-Background:
-    Given I am signed out
-
-Scenario: Login with invalid username/password
-    When I click on sign in link
-    And I enter incorrect authentication information
-    Then I should see a 'user not found error'
